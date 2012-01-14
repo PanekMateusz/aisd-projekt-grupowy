@@ -5,7 +5,16 @@ module Breeding
 
     	def initialize(x, y)
     		@x, @y = x, y
-    	end
+    	  @@width, @@length = 7, 10 
+      end
+
+      def width
+        @@width
+      end
+
+      def length
+        @@length
+      end
     end
   end
 end
