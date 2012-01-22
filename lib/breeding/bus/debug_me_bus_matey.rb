@@ -42,7 +42,7 @@ for i in 0..4
         str = str + ' '
       end
 
-    elsif i == (bus.seats(l).y/7)
+    elsif l < bus.seats_length && i == (bus.seats(l).y/7)
       if l < bus.seats_length && j/2 == (bus.seats(l).x/10)
         str = str + "S"
           l = l+1
@@ -83,7 +83,7 @@ for i in 0..4
         str = str + ' '
       end
 
-    elsif i == (bus.seats(l).y/7)
+    elsif l < bus.seats_length && i == (bus.seats(l).y/7)
       if l < bus.seats_length && j/2 == (bus.seats(l).x/10)
         str = str + "S"
           l = l+1
