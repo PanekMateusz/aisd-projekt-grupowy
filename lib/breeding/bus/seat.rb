@@ -16,13 +16,13 @@ module Breeding
         @@length
       end
 
-      def contains(a)
+      def equals(a)
         if @x == a.x && @y == a.y
           return true
         end
         return false
       end
-      
+
     end
   end
 end
